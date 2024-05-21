@@ -1,0 +1,46 @@
+
+button {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border: 0px;
+}
+
+button:focus:hover {
+    animation-name: aaa;
+    animation-duration: 6s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes aaa {
+    0% {
+        background-color: red;
+        transform: translate(0px, 0px);
+    }
+
+    25% {
+        background-color: blue;
+        transform: translate(0px, 300px);
+    }
+
+    50% {
+        background-color: green;
+        transform: translate(300px, 300px);
+    }
+
+    75% {
+        background-color: yellow;
+        transform: translate(300px, 0px);
+    }
+
+    100% {
+        background-color: red;
+        transform: translate(0px, 0px);
+    }
+}
+
+body {
+    width: 1000px;
+    height: 1000px;
+}
